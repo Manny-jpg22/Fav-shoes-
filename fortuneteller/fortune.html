@@ -1,21 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      body{
+        background-image: url("images.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center 50%;
+      }
+    </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
+   
 
     <title>Fortune Teller</title>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="style.css" />
-
-    <!-- import the webpage's javascript file -->
-    <script src="script.js" defer></script>
   </head>
   <body>
     <!-- this is the start of content -->
+    <h1><em>Favorite Shoes</em></h1>
+    <img src="shoes.jpg" alt="Favorite shoes" width="250" height="450">
+    <form name="fortuneTeller" id="fortuneTeller" action="fortune.html">
+      <label for="namefield">Name:</label>
+      <input type="text" id="namefield" name="name" placeholder="your name" required>
+      <br>
+      <label for="questionfield">Question:</label>
+      <input type="text" id="questionfield" name="question" placeholder="a yes or no question">
+      <br>
+
+      <label for=+sizefield"> Shoe Size:</label>
+      <input type="number" id="sizefield" name="size" min="1" max="20">
+      <br>
+      
+      <label for="colorfield">Favorite Shoe Color:</label>
+      <input type="color" id="colorfield" name="color">
+      <br>
+
+      <label for="birthdayfield">Birthday:</label>
+      <input type="date" id="bithdayfield" name="birthday">
+      <br>
+
+      <label for="shoefield">Favorite Shoe Type;</label>
+      <select id="shoefield" name="shoe">
+        <option value="sneakers">Sneakers</option>
+        <option value="boots">Boots</option>
+        <option value="sandals">Sandals</option>
+      <select>
+      <br>
+
+      <label for="thoughtsfield">Tell the Fortune Teller More:</label>
+      <textarea id="thoughtsfield" names="thoughts"></textarea>
+      <br>
+
+      <input type="submit">
+    </form>
     <div id="fortune"></div>
-    <a href="index.html">Ask another...</a>
   </body>
-</html>
